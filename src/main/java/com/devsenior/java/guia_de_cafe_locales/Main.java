@@ -1,14 +1,15 @@
 package com.devsenior.java.guia_de_cafe_locales;
 
 import java.util.List;
+import java.util.Scanner;
 
 import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO;
 import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
 
 public class Main {
     public static void main(String[] args) {
-        // 1. Creamos una instancia de nuestro DAO para usar sus métodos.
         CafeteriaDAO cafeteriaDAO = new CafeteriaDAO();
+        Scanner scanner = new Scanner(System.in);
 
         // --- PRIMERO, LEEMOS Y MOSTRAMOS LOS DATOS ACTUALES ---
         System.out.println("--- Reporte de Cafeterías (Antes de Insertar) ---");
@@ -17,11 +18,21 @@ public class Main {
             System.out.println(cafeteria);
         }
         System.out.println("-------------------------------------------------");
-        System.out.println(); // Un poco de espacio
+        System.out.println();
 
-        // --- SEGUNDO, GUARDAMOS UNA NUEVA CAFETERÍA ---
-        System.out.println("Guardando una nueva cafetería...");
-        Cafeteria nuevaCafeteria = new Cafeteria(3, "Café de la Finca", "Vereda El Carmen", 5);
+        // --- SEGUNDO, PEDIMOS DATOS AL USUARIO ---
+        System.out.println("Ingrese los datos de la nueva cafetería:");
+        System.out.print("ID: ");
+        int id = scanner.nextInt();
+        scanner.nextLine(); // Limpiar buffer
+        System.out.print("Nombre: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Dirección: ");
+        String direccion = scanner.nextLine();
+        System.out.print("Calificación (1-5): ");
+        int calificacion = scanner.nextInt();
+
+        Cafeteria nuevaCafeteria = new Cafeteria(id, nombre, direccion, calificacion);
         cafeteriaDAO.guardar(nuevaCafeteria);
         System.out.println("¡Nueva cafetería guardada con éxito!");
         System.out.println();
@@ -33,5 +44,7 @@ public class Main {
             System.out.println(cafeteria);
         }
         System.out.println("--------------------------------------------------");
+
+        scanner.close();
     }
 }

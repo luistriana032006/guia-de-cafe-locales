@@ -1,0 +1,1 @@
+{"resources":{"sql/creacionDeLasTablas.sql":{"default-datasource":"postgres-jdbc-1965e62da39-6b4c9fe7243dad80","default-catalog":"guia_cafes_db","default-schema":"public"},"sql/insertarDatos.sql":{"default-datasource":"postgres-jdbc-1965e62da39-6b4c9fe7243dad80","default-catalog":"guia_cafes_db","default-schema":"public"}}}

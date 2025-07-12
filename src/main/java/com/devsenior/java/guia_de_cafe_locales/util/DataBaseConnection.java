@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataBaseConnection {
-  // Reemplaza estos valores con los de tu base de datos
+ 
     private static final String URL = "jdbc:postgresql://localhost:5432/guia_cafes_db";
     private static final String USER = "postgres"; // Tu usuario de PostgreSQL
     private static final String PASSWORD = "admin123";
