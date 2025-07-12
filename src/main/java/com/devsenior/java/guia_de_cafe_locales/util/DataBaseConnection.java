@@ -1,4 +1,4 @@
-package com.devsenior.java.guia_de_cafe_locales;
+package com.devsenior.java.guia_de_cafe_locales.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

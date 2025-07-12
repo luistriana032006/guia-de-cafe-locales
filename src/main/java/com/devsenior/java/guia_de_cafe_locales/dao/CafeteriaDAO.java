@@ -1,4 +1,4 @@
-package com.devsenior.java.guia_de_cafe_locales; // Define el paquete al que pertenece la clase
+package com.devsenior.java.guia_de_cafe_locales.dao; // Define el paquete al que pertenece la clase
 
 import java.sql.Connection;         // Importa la clase para manejar conexiones a la base de datos
 import java.sql.PreparedStatement;  // Permite ejecutar sentencias SQL parametrizadas
@@ -7,6 +7,9 @@ import java.sql.SQLException;       // Maneja excepciones relacionadas con SQL
 import java.sql.Statement;          // Permite ejecutar sentencias SQL simples
 import java.util.ArrayList;         // Implementación de la interfaz List
 import java.util.List;              // Interfaz para listas
+
+import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
+import com.devsenior.java.guia_de_cafe_locales.util.DataBaseConnection;
 
 public class CafeteriaDAO { // Clase DAO (Data Access Object) para manejar operaciones con la tabla cafeterias
 

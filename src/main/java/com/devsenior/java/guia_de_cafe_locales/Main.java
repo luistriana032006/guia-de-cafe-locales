@@ -2,6 +2,9 @@ package com.devsenior.java.guia_de_cafe_locales;
 
 import java.util.List;
 
+import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO;
+import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
+
 public class Main {
     public static void main(String[] args) {
         // 1. Creamos una instancia de nuestro DAO para usar sus métodos.

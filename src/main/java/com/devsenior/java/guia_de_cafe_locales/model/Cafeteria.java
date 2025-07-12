@@ -1,4 +1,4 @@
-package com.devsenior.java.guia_de_cafe_locales;
+package com.devsenior.java.guia_de_cafe_locales.model;
 
 public class Cafeteria {
 
