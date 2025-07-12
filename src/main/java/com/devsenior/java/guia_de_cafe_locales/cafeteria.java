@@ -1,13 +1,13 @@
 package com.devsenior.java.guia_de_cafe_locales;
 
-public class cafeteria {
+public class Cafeteria {
 
     private int id_cafeteria;
     private String nombre;
     private String direccion;
     private int calificacion;
 
-    public cafeteria(int id_cafeteria, String nombre, String direccion, int calificacion) {
+    public Cafeteria(int id_cafeteria, String nombre, String direccion, int calificacion) {
         this.id_cafeteria = id_cafeteria;
         this.nombre = nombre;
         this.direccion = direccion;
