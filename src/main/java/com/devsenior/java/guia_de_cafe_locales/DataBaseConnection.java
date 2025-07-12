@@ -1,4 +1,8 @@
-package com.devsenior.java;
+package com.devsenior.java.guia_de_cafe_locales;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DataBaseConnection {
   // Reemplaza estos valores con los de tu base de datos
