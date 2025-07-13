@@ -27,7 +27,7 @@ public class CafeteriaDAO { // Clase DAO (Data Access Object) para manejar opera
             while (rs.next()) { // Itera sobre cada fila del resultado
                 int id = rs.getInt("id_cafeteria");           // Obtiene el id de la cafetería
                 String nombre = rs.getString("nombre");       // Obtiene el nombre
-                String direcccion = rs.getString("direccion"); // Obtiene la dirección (¡ojo, error de typo aquí!)
+                String direcccion = rs.getString("direccion"); // Obtiene la dirección 
                 int calificacion = rs.getInt("calificacion"); // Obtiene la calificación
 
                 Cafeteria cafeteria = new Cafeteria(id, nombre, direcccion, calificacion); // Crea objeto Cafeteria
@@ -54,7 +54,7 @@ public class CafeteriaDAO { // Clase DAO (Data Access Object) para manejar opera
             pstmt.setString(3, cafeteria.getDireccion());     // Asigna la dirección
             pstmt.setInt(4, cafeteria.getCalificacion());     // Asigna la calificación
 
-            pstmt.executeUpdate();
+            pstmt.executeUpdate(); 
 
         } catch (SQLException e) { // Si ocurre un error
             e.printStackTrace();   // Imprime el error
