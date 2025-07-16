@@ -6,7 +6,7 @@ import java.util.Scanner;
 import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO;
 import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
 
-public class Main {
+public class MainJDBC {
     public static void main(String[] args) {
         CafeteriaDAO cafeteriaDAO = new CafeteriaDAO();
         Scanner scanner = new Scanner(System.in);
