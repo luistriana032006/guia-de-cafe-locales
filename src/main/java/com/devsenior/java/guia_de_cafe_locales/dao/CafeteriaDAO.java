@@ -54,7 +54,7 @@ public class CafeteriaDAO { // Clase DAO (Data Access Object) para manejar opera
             pstmt.setString(3, cafeteria.getDireccion());     // Asigna la dirección
             pstmt.setInt(4, cafeteria.getCalificacion());     // Asigna la calificación
 
-            pstmt.executeUpdate(); 
+            pstmt.executeUpdate(); // ejecuta la creacion de la nueva entidad de la tabla cafeteria 
 
         } catch (SQLException e) { // Si ocurre un error
             e.printStackTrace();   // Imprime el error
