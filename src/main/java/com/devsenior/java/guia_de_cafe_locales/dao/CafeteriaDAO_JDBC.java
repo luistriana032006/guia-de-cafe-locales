@@ -11,8 +11,8 @@ import java.util.List;              // Interfaz para listas
 import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
 import com.devsenior.java.guia_de_cafe_locales.util.DataBaseConnection;
 
-public class CafeteriaDAO { // Clase DAO (Data Access Object) para manejar operaciones con la tabla cafeterias
-
+public class CafeteriaDAO_JDBC { // Clase DAO (Data Access Object) para manejar operaciones con la tabla cafeterias
+/* 
     /**
      * Este método se conecta a la base de datos y obtiene todas las cafeterías.
      * @return una lista de objetos Cafeteria
@@ -60,4 +60,5 @@ public class CafeteriaDAO { // Clase DAO (Data Access Object) para manejar opera
             e.printStackTrace();   // Imprime el error
         }
     }
+    
 }

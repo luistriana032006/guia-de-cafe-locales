@@ -3,12 +3,12 @@ package com.devsenior.java.guia_de_cafe_locales;
 import java.util.List;
 import java.util.Scanner;
 
-import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO;
+import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO_JDBC;
 import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
 
 public class MainJDBC {
     public static void main(String[] args) {
-        CafeteriaDAO cafeteriaDAO = new CafeteriaDAO();
+        CafeteriaDAO_JDBC cafeteriaDAO = new CafeteriaDAO_JDBC();
         Scanner scanner = new Scanner(System.in);
 
         // --- PRIMERO, LEEMOS Y MOSTRAMOS LOS DATOS ACTUALES ---

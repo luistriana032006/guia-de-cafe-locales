@@ -1,11 +1,11 @@
 package com.devsenior.java.guia_de_cafe_locales.service;
 
-import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO;
+import com.devsenior.java.guia_de_cafe_locales.dao.CafeteriaDAO_JDBC;
 import com.devsenior.java.guia_de_cafe_locales.model.Cafeteria;
 
 public class CafeteriaService {
 
-    private CafeteriaDAO cafeteriaDAO = new CafeteriaDAO();
+    private CafeteriaDAO_JDBC cafeteriaDAO = new CafeteriaDAO_JDBC();
 
     public void crearNuevaCafeteria(String nombre, String direccion, int calificacion) {
         // 1. LÓGICA DE VALIDACIÓN (AQUÍ)
